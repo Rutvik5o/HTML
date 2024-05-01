@@ -1,0 +1,18 @@
+h1{
+    color:rgb(135, 224, 0);
+    background-color:black;
+   
+    
+}
+p
+{
+    color:hotpink !important;
+
+    /* important keyword is used for give such a priority */
+
+}
+
+p.hello{
+    font-style: italic;;
+
+}
