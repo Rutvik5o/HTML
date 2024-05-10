@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow & Text shadow</title>
+    <style>
+        div.container {
+            display: flex;
+        }
+
+        .card {
+            padding: 34px 12px;
+            margin: 23px 12px;
+            /* border:2px solid red; */
+            background-color: aqua;
+
+            /* box-shadow: offset-x offset-y; */
+            /* box-shadow:10px 13px green; => for bottom and right */
+            /* box-shadow: -11px -14px #677976; =>for top  and left */
+
+            /* box-shadow: offset-x offset-y blur-radius; */
+            /* box-shadow:7px 5px 10px purple;  3rd is blur radius */
+            /* box-shadow:-7px -5px 10px purple; */
+
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius; */
+            /* box-shadow:7px 5px 10px 12px red;  4th is spread radius */
+
+            /* you can also use color in RGBA */
+
+            box-shadow:inset 3px 5px yellow;
+
+            box-shadow: 3px 5px yellow,3px 5px green;  /*multiple shadow can be given*/
+
+
+        }
+
+        .card h2
+        {
+            /* text-shadow:3px 4px white;
+            */
+
+            text-shadow:3px 4px 5px white;
+
+            /* can be also use nagative value */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2> This is C++ Course
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo, adipisci tempora incidunt voluptas
+                labore explicabo eum iste. Repudiandae minus quae quisquam perferendis soluta unde at. Accusamus
+                asperiores minima enim ullam libero ad excepturi!</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo, adipisci tempora incidunt voluptas
+                labore explicabo eum iste. Repudiandae minus quae quisquam perferendis soluta unde at. Accusamus
+                asperiores minima enim ullam libero ad excepturi!</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo, adipisci tempora incidunt voluptas
+                labore explicabo eum iste. Repudiandae minus quae quisquam perferendis soluta unde at. Accusamus
+                asperiores minima enim ullam libero ad excepturi!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

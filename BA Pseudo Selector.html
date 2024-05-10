@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        body
+        {
+            margin:0;
+            padding:0;
+            background-color:black;
+            color:white;
+            font-family: "Outfit", sans-serif;
+
+            background:url('https://source.unsplash.com/user/wsanter') no-repeat center center/cover;
+        }
+
+        header::before
+        {
+           
+            
+            background:url('https://source.unsplash.com/user/wsanter') no-repeat center center/cover;
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+
+            width:100%;
+            height:100%;
+            z-index:-1;
+            opacity:0.5;
+
+        }
+
+        section{
+            height:344px;
+            margin:3px 23px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        /* border:2px solid red; */
+        justify-content:center;
+
+
+        }
+
+        /* section::before
+        {
+            content:"this is content";
+        } */
+        li
+        {
+            list-style:none;
+            padding:20px 30px;
+
+        }
+        .navigation
+        {
+            font-size:20px;
+            display:flex;
+        }
+        h1{
+
+            font-size:4rem;
+
+        }
+
+        p
+        {
+            text-align:center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <section>
+        <h1>welome to coding world</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, cum voluptate! Rem, modi quo. Maxime aspernatur nulla repellendus rem pariatur vitae officiis ducimus quasi, modi vel praesentium, provident nostrum! Cum placeat esse maxime deserunt?</p>
+    </section>
+    <hr>
+</body>
+</html>
