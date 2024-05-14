@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query with css grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        navbar {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media (max-width:300px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: black;
+
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: purple;
+            }
+        }
+
+        .bn {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bn">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+
+        <section class="bn">
+            <h2>Learn CSS in HTML</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quos possimus quisquam quasi iusto hic, sint quae in esse unde architecto corrupti! Iusto, asperiores ab? Sunt voluptatum perferendis alias ratione placeat hic vitae iure totam libero recusandae, amet cum magnam, dolore deserunt aliquam quibusdam itaque omnis porro quo! Enim soluta impedit ut inventore, dolorem consequatur explicabo quibusdam illum aliquam? Magnam doloremque dignissimos saepe, voluptatibus voluptas dicta ducimus reiciendis suscipit quo sed aliquam maiores culpa incidunt illum aliquid vero nostrum, reprehenderit, nihil nobis mollitia possimus debitis! Itaque, eveniet aliquam. Et iste veniam unde laudantium ad qui, neque sapiente, harum dolore nostrum numquam ipsa alias sed repellendus sit excepturi perspiciatis quos totam esse porro eveniet pariatur. Aut qui quas provident libero nostrum animi ipsa magni, consequuntur soluta quos exercitationem reprehenderit, quidem doloribus accusamus? Molestias excepturi sunt eos modi consequuntur rem rerum laudantium illo sequi iure laborum beatae, ad veniam. Eaque deleniti voluptatum deserunt dolor obcaecati quos eos totam nemo molestiae ut non explicabo doloremque iusto magnam corrupti suscipit, quam culpa nihil id. Asperiores in at quis nihil aliquid ab hic. Natus neque accusamus illo numquam molestias. Quidem in fugit labore voluptatem, officia illo officiis libero fugiat ullam et optio accusantium, laboriosam nostrum velit saepe explicabo modi esse rerum maiores veniam numquam? Libero, facilis iure quis magnam officia cum ab expedita, maiores sit similique animi tenetur itaque esse molestiae? Obcaecati rem sint ea qui illum adipisci repellat repudiandae dignissimos quo iste, quam delectus alias tempore mollitia accusamus fuga consectetur, cumque aperiam quos error vero? Repudiandae doloremque molestias nisi sit dolorum dignissimos illum, voluptates amet qui eos aut obcaecati cum, impedit vel culpa vero recusandae inventore fugiat possimus laboriosam laudantium. Consequatur dolorem dicta quaerat adipisci deleniti aliquam vero, suscipit fuga? Repellendus vitae doloribus, incidunt assumenda ipsam reprehenderit non deserunt ducimus molestiae, optio debitis itaque quo quasi officiis earum! Commodi tempore sapiente ipsa quasi ad molestias vel itaque placeat in nostrum quo quidem veritatis, eveniet laudantium doloribus maiores illo dolorem corrupti aliquam quia temporibus! Fugiat, error, aliquam rerum ut odio veniam aspernatur expedita officiis obcaecati impedit ipsam doloribus deleniti.</p>
+        </section>
+        <aside class="bn">
+            <h1> More About Us</h1>
+        </aside>
+
+    </div>
+
+    <footer class="bn">CopyRight All Rights are Reserved.</footer>
+
+</body>
+
+</html>
