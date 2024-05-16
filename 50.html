@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScirpt String Functions</title>
+    
+</head>
+<body>
+    
+
+   <script>
+
+        var str = "This is a string";
+
+        console.log(str);
+
+        //First Occurence of a substring
+
+        var position= str.indexOf('is');
+
+        console.log(position);
+
+        //Last Occurence of a substring
+
+        position=str.lastIndexOf('is');
+
+        console.log(position);
+
+        //Substring from a string
+
+        // var substr= str.slice(1,6);  //=> print 1 to 5 and also can take nagative value
+        var substr= str.substring(1,6);  //=> print 1 to 5 and also cannot take nagative value
+        var substr1= str.substr(1,2);  //=> print 1 to 5
+
+        console.log(substr1);
+
+
+    //    var xyz=str.replace("This","Our");
+
+    //    console.log(str);
+    //    console.log(xyz);
+
+
+
+    //  console.log(str.toUpperCase());
+    //  console.log(str.toLowerCase());
+
+    // var newString= str.concat('New String');
+
+    // console.log(newString);
+
+
+    // var strwithwhitespace= "               This   conatains                         Whitespace          "; //first and last position whitespace are removed
+
+    // console.log(strwithwhitespace);
+
+    // console.log(strwithwhitespace.trim());
+
+
+    // var char3= str.charAt(2);
+    // var char3= str.charCodeAt(2); // give the that character code of that character
+
+    // console.log(char3);
+
+    console.log(str[6]);
+
+
+    </script>
+</body>
+</html>
