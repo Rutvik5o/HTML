@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactio using aleert, confirm and prompt</title>
+</head>
+<body>
+
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        //Alert in in-browser JavaScript- Does not return anything
+        // alert("Good Morning");
+
+        //Prompt is js
+
+        // let name=prompt("What is your name","Guest");  //2nd parameter is default value
+
+        // console.log(name);
+
+        //Confirm in js
+
+        let deletepost= confirm("Do you want to really want to delete as post?");
+
+        if(deletepost)
+        {
+            console.log("You post has been deleted sucessfully");
+        }
+        else
+        {
+            console.log("your post have been not deleted");
+        }
+
+        console.log(deletepost);
+    
+    </script>
+    
+</body>
+</html>
