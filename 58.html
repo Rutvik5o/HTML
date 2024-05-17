@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SettimeOut and ClearTimeOut</title>
+</head>
+<body>
+
+    <div class="container">
+        this is a container
+        <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("this is turtorial 58");
+
+
+        // setTimeOut->Allows us to run the function once after the interval of TimeRanges
+        // CleartimeOut-> Allows us to run the function repetadly after the interval of time
+
+        function greet(name,bt)
+        {
+            console.log("Hello Good Morning"+name," ",bt);
+        }
+
+    //    timeOut= setTimeout(greet,5000,"xyz","Byee");
+    //    console.log(timeOut);
+
+    //    clearTimeout(2);
+
+        // setTimeout(greet(),12000); -> wrong as it is calling the function inside setTimeOut
+
+
+        // intervalid=setInterval(greet,1000," xyz","bye");
+
+        // clearInterval(intervalid);
+
+
+        function displayTime()
+        {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+
+        setInterval(displayTime,1000);59
+
+    </script>
+    
+</body>
+</html>
