@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Br, initial-scale=1.0">
+    <title>Js Events</title>
+    <style>
+        #btn {
+            padding: 10px 34px;
+            color: white;
+            border: 2px solid grey;
+            background-color: black;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: point;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser events:
+   click
+   contextmenu
+   mouseover/mouseout
+   mousedown/mouseup 
+   mousemove
+   submit
+   focus
+   DOMContentLoaded
+   transitionend -->
+
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="para">orem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sunt deleniti minima
+            exercitationem, labore fugit, repellendus quia et libero quisquam in, optio fuga. Quia, minima
+            exercitationem nam enim vero animi aliquid dolores, architecto tenetur repellat quisquam? Nemo aperiam
+            mollitia recusandae ipsum maiores eaque illo cum ducimus aliquam quasi nihil ipsa est delectus quos,
+            voluptatem, adipisci quae unde. Dolorum odit, libero maiores at delectus, harum exercitationem adipisci rem,
+            quo eum eligendi mollitia quasi? Quidem placeat accusamus aspernatur tenetur itaque cum, enim debitis minus
+            quo inventore esse illum porro nisi perspiciatis magni voluptatibus fugiat! Architecto ut tempore ullam
+            itaque rem, deserunt incidunt commodi accusantium recusandae, perspiciatis laborum. Beatae iste iusto, est
+            harum vero tempore placeat laudantium quidem labore dolorum debitis odit. Ratione ipsum, maiores fuga qui
+            sequi saepe harum vitae pariatur alias laboriosam magnam veniam, et magni cum culpa quos delectus placeat
+            quas, vero dolore quis officiis voluptatum nobis laudantium! Maxime aspernatur nulla expedita!
+            Exercitationem velit distinctio, vitae quo a facilis quod asperiores, ad totam suscipit incidunt? Quas quis
+            voluptatum corporis debitis eos, animi sint ex quae autem consectetur. Fugiat sequi harum eius quidem eaque
+            qui impedit vero voluptatum officiis blanditiis neque adipisci deserunt dignissimos assumenda inventore, hic
+            iusto labore fugit magnam dolores! Officia asperiores fugit ad incidunt? Cum rerum, veritatis in, minus nemo
+            laborum exercitationem ab consequatur similique voluptas quisquam officia distinctio esse sunt voluptates?
+            Eaque cumque dicta non autem maxime doloribus. Repudiandae facere similique id provident quae impedit,
+            dignissimos tenetur error veniam mollitia fugiat cupiditate, repellat nemo pariatur modi ex, doloribus nihil
+            accusantium soluta adipisci! Dicta et quos sapiente! Eaque, dicta rem reiciendis nisi veniam sint inventore
+            molestiae itaque reprehenderit id voluptates explicabo fugiat culpa? Rem provident cupiditate perspiciatis
+            sunt distinctio fugit, nobis adipisci placeat. Labore, aliquid. Iste illum modi vel eius quibusdam amet.
+            Incidunt dolorum aperiam tempora expedita earum enim asperiores atque numquam fugit nesciunt! Quaerat
+            impedit molestias atque, nobis corporis voluptas. Facere iure enim animi, modi tempore aliquid! Repudiandae
+            asperiores autem expedita veniam sapiente, quae natus perspiciatis quisquam architecto, harum est laudantium
+            libero non repellendus consectetur explicabo? Quo illum earum voluptates neque?</p>
+    </div>
+
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+    <script>
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run()
+        {
+            alert("Mouse inserted");
+
+        });
+
+        para.addEventListener('mouseout',function run()
+        {
+            console.log("Now mouse ouside");
+
+        }
+    );
+
+
+
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');  //can be optional
+
+            if (para.style.display != "none") {
+                para.style.display = "none";
+            }
+            else {
+                para.style.display = "block";
+            }
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
