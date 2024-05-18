@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+
+    <div class="container">
+        This is arrow function trutorial.
+    </div>
+
+    <script>
+        // function greet()
+        // {
+        //     console.log("good morning");
+        // }
+
+
+        //Arrow Function
+
+        // let  greet = () => {
+        //     console.log("Good Morning");
+        // }
+
+        // greet();
+
+
+        let greet=()=> console.log("shortcut of the shortcut");
+        greet();
+
+
+        setTimeout(() => {
+            console.log("We are inside settime out");
+
+        }, 3000);
+
+
+
+        // let sum=(a,b) =>
+        // {
+        //     return a+b;
+
+        // };
+
+
+        // another shortcut of that
+
+        let sum2=(a,b)=>a+b; //=>useful in two parameter
+
+        let half= a=> a/2;  // useful in only one parameter
+
+
+        let ob1=
+        {
+            greeting:"Thanks!",
+            names:["Harry","abc","xyz","skillf"],
+
+            speak()
+            {
+                this.names.forEach((student)=>{
+                    console.log("welcome "+student +" "+this.greeting);
+
+                }
+            );
+            }
+        }
+
+        ob1.speak();
+        
+    </script>
+
+</body>
+
+</html>
