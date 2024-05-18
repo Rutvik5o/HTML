@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>this is math object turtorial</h1>
+    </div>
+
+
+    <script>
+        //Printing the Math Object
+       let m=  Math;
+        console.log(m);
+
+     // Printing the constants from the Math Object
+        console.log("this value of Math.E is=>",Math.E);
+        console.log("This value of Math.PI is=>",Math.PI);  
+
+        //Printing the functions from Math Object
+
+        let a=34.634; 
+        let b=89;
+
+        console.log("the value of a and b",a,b);
+        console.log("the value of a and b rounded is",Math.round(a),b);
+
+
+        console.log("3 raised the power of 2 is ",Math.pow(3,2));
+        console.log("9 raised the power of 2 is ",Math.pow(9,4));
+
+
+        console.log("square root of 36 is ", Math.sqrt(36));
+
+        console.log("square root of 64 is ", Math.sqrt(64));
+        console.log("square root of 50 is ", Math.sqrt(50));
+
+
+        //ceil and floor
+
+        console.log("5.8 rounded up to nearest integer is ",Math.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer is ",Math.floor(5.8));
+
+
+        //abs function
+
+        console.log("Absoulte value of 5.66 is", Math.abs(5.66));
+        console.log("Absoulte value of -5.66 is", Math.abs(-5.66));
+
+
+        //Trinometric functions
+
+        console.log("The value of sin(pi) is ",Math.sin(Math.PI/2));
+        console.log("The value of cos(pi) is ",Math.cos(Math.PI/2));
+        console.log("The value of tan(pi) is ",Math.tan(Math.PI/2));
+
+        //min and max functions
+
+        console.log("Minimum value of 4,5,6 is ",Math.min(4,5,6));
+        console.log("Maximum value of 4,5,6 is ",Math.max(48,54,67));
+
+        //Generating a random  number
+
+        let r=Math.random();
+        //Random number b/w (a,b) =a + (b-a)*Math.random()
+        let a1 = 1; //given value between 1 to 100
+        let b1=100;
+        let r1=a1+(b1-a1)*Math.random();
+        
+        console.log("The Random number is",r);
+        console.log("The Random number is",r1);
+
+
+
+    </script>
+    
+</body>
+</html>
