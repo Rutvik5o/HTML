@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            font-size: 23px;
+            background-color: antiquewhite;
+            border: 2px solid grey;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+
+        }
+
+
+        #time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        This is container
+
+        Current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is date and time turtorial");
+
+        let now = new Date(2000);
+
+        console.log(now);
+
+        // let newDate=new Date("2029-06-07");
+        // console.log(newDate);
+
+
+        // let newDate=new Date(year,month,date,hours,minutes,seconds,milliseconds);
+        let newDate = new Date(3010, 4, 6, 10, 44, 18, 25);
+
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("This year is", yr);
+
+        let dt = newDate.getDate();
+        console.log("This Date is", dt);
+
+        let gm = newDate.getMonth();
+        console.log("This month is", gm);
+
+        let gh = newDate.getHours();
+        console.log("This Hours is", gh);
+
+        newDate.setDate(15);
+
+        newDate.setSeconds(34);
+        console.log(newDate);
+
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+
+</body>
+
+</html>
